@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perkebunan Teh Hijau Dani</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7fbf6;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Navbar */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#2e7d32;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#a5d6a7;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(46,125,50,.65),rgba(46,125,50,.65)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#5d4037;
+    color:white;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#3e2723;
+}
+
+/* Section */
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:#2e7d32;
+    font-size:38px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* About */
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.about h3{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+/* Card */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin:15px 0;
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Contact */
+.contact{
+    background:#a5d6a7;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+}
+
+.contact h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">🍃 Green Tea</div>
+
+<nav>
+<ul>
+<li><a href="#home">Beranda</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#keunggulan">Keunggulan</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Perkebunan Teh Hijau Asri DANI</h1>
+
+<p>
+Nikmati keindahan hamparan kebun teh hijau yang sejuk,
+udara pegunungan yang segar, serta kualitas daun teh
+terbaik dari alam Indonesia.
+</p>
+
+<a href="#tentang" class="btn">Jelajahi Sekarang YAH</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="tentang">
+
+<div class="section-title">
+<h2>Tentang Perkebunan</h2>
+<p>Keindahan alam yang menghasilkan teh berkualitas tinggi.</p>
+</div>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1463123081488-789f998ac9c4?auto=format&fit=crop&w=900&q=80" alt="Kebun Teh">
+
+<div>
+
+<h3>Alam yang Menyegarkan</h3>
+
+<p>
+Perkebunan teh hijau berada di dataran tinggi dengan udara
+yang sejuk dan tanah yang subur. Kondisi alam ini membuat
+daun teh tumbuh dengan kualitas terbaik, menghasilkan aroma
+yang khas dan rasa yang menyegarkan.
+</p>
+
+<br>
+
+<p>
+Selain menjadi pusat produksi teh, kawasan ini juga menjadi
+destinasi wisata alam yang menawarkan pemandangan hijau,
+jalur trekking, dan pengalaman edukasi mengenai proses
+budidaya hingga pengolahan daun teh.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURE -->
+<section id="keunggulan">
+
+<div class="section-title">
+<h2>Keunggulan</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌿 Daun Berkualitas</h3>
+<p>Dipetik dari pucuk daun pilihan yang masih segar.</p>
+</div>
+
+<div class="card">
+<h3>🌱 Ramah Lingkungan</h3>
+<p>Mengutamakan metode budidaya yang menjaga kelestarian alam.</p>
+</div>
+
+<div class="card">
+<h3>🏞 Udara Pegunungan</h3>
+<p>Lingkungan yang sejuk menghasilkan cita rasa teh yang khas.</p>
+</div>
+
+<div class="card">
+<h3>🍵 Teh Premium</h3>
+<p>Diproses dengan standar kualitas tinggi untuk menjaga aroma alami.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="galeri">
+
+<div class="section-title">
+<h2>Galeri Perkebunan</h2>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="kontak">
+
+<div class="contact">
+
+<h2>Kunjungi Perkebunan Kami</h2>
+
+<p>
+📍 Dataran Tinggi Indonesia<br>
+📞 +62 878-4975-9344<br>
+📧 info@greentea.id
+</p>
+
+<br>
+
+<a href="#" class="btn">Hubungi Kami</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Perkebunan Teh Hijau Asri DANI | Menjaga Alam, Menghasilkan Teh Berkualitas yang sangat tinggi.
+</p>
+
+</footer>
+
+</body>
+</html>
